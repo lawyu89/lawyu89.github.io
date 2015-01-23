@@ -1,0 +1,32 @@
+li
+  {
+    display:inline;
+    border: 2px solid #0000000;
+    font-size: 20px;
+    padding:10px;
+    position:relative;
+
+  }
+
+
+ul
+  {
+
+  }
+
+  #format
+    {
+      border-right: 1px solid black;
+      border-top: 1px solid black;
+      padding: 10px 10px 10px 10px;
+    }
+
+  #format2
+  {
+      border-top: 1px solid black;
+  }
+
+.entries
+{
+  display:block;
+}
