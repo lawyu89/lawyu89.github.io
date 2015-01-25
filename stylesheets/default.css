@@ -11,9 +11,6 @@ html,
   text-align: center;
   font-size: 3em;
   font-family: fantasy, sans-serif;
-  min-width: 50%;
-  max-height: 2em;
-  margin: auto;
 }
 
 .navbar {
@@ -26,13 +23,12 @@ html,
   overflow: hidden;
 }
 
-ul {
+.navbar ul {
   list-style: none;
-  text-align: left;
 }
 
 .navbar li {
-  float: left;
+  display: inline-block;
 }
 
 .navbar li + li{
@@ -41,7 +37,7 @@ ul {
 }
 
 #body {
-  margin-top: 2em;
+  margin-top: 3em;
   text-align: center;
 
 }
@@ -56,14 +52,15 @@ ul {
 }
 
 .footer {
+clear:both;
   position: absolute;
   bottom: 0;
-  background-color: #5582FF;
-  width: 95%;
+  background-color: #1250E8;
+  width: 99%;
   height: auto;
   text-align: center;
-  border: .9em solid black;
   border-radius: 2em;
+  font-size: 1.15em;
 }
 
 .resize {
@@ -74,6 +71,16 @@ ul {
   margin: 0px 20px 0px 20px;
 }
 
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+a:visited {
+  text-decoration: none;
+  color:blue;
+}
+
 a:hover {
-  color: white;
+  color:white;
 }
