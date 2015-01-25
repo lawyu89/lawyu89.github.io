@@ -1,91 +1,79 @@
 html,
-body {
-   margin:0;
-   padding:0;
-   height:100%;
-   background-color: red;
-}
+
 #container {
-   min-height:100%;
-   position:relative;
-   width: 100%;
-   margin:0;
+  min-height: 100%;
+  position: relative;
+  width: 100%;
+  background-color: #D1E4E8;
 }
 
-#navbar {
-  height: 100px;
-  top: 0px;
+#header {
+  text-align: center;
+  font-size: 3em;
+  font-family: fantasy, sans-serif;
+  min-width: 50%;
+  max-height: 2em;
+  margin: auto;
+}
+
+.navbar {
+  background-color: #2FC3FF;
+  border-radius: 2em;
+  font-family:futura, sans-serif;
   width: 100%;
-  border: 3px solid black;
-  border-radius: 10px;
-  background-color:blue;
-  margin: 0;
-  float: left;
+  height: 3.5em;
+  text-align: center;
+  overflow: hidden;
 }
 
 ul {
   list-style: none;
-  line-height: 50px;
+  text-align: left;
 }
 
-li {
-  display: inline-block;
-}
-
-.navitem {
-  font-size: 1.2em;
-  font-family:Verdana, sans-serif;
-  border: 3px solid black;
-  border-radius: 5px;
-  background-color: #32FDFF;
-  padding: 0px 10px 0px 10px;
-  margin: 0px 5px 0px 5px;
-}
-
-#searchbar {
-  padding: 0px 25px 0px 25px;
-  margin: 0px 5px 0px 250px;
-}
-
-#indexbody {
-  padding: 200px 0px 200px 0px;
-  background-color: red;
+.navbar li {
   float: left;
-  width: 100%;
-  height: auto;
-  margin: auto;
 }
-p {
-  font-family: "Comic Sans MS";
+
+.navbar li + li{
+  margin-left: 8em;
+  margin-bottom: 2em;
+}
+
+#body {
+  margin-top: 2em;
+  text-align: center;
+
+}
+
+#greeting {
   font-size: 2em;
+  font-family: papyrus, sans-serif;
 }
 
-#footer {
-  position:absolute;
-  bottom:0;
-  width: 100%;
-  height: 70px;
-  background-color: blue;
-  border: 3px solid black;
-  border-radius: 10px;
-  text-align: center;
-  display: table;
+#me {
+  border-radius: 4em;
 }
 
-div > div {
-  display: table-cell;
-  vertical-align: middle;
+.footer {
+  position: absolute;
+  bottom: 0;
+  background-color: #5582FF;
+  width: 95%;
+  height: auto;
   text-align: center;
+  border: .9em solid black;
+  border-radius: 2em;
 }
 
 .resize {
-  border: 3px solid black;
-  border-radius: 5px;
-  width:40px;
+  width: 2.5em;
   height:auto;
+  border: 0.2em solid black;
+  border-radius: 15px;
+  margin: 0px 20px 0px 20px;
 }
 
-#footernotes {
-  font-size: 1.2em;
-  text-align: center;
+a:hover {
+  color: white;
 }
