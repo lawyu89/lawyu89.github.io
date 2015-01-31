@@ -36,23 +36,28 @@ html,
   margin-bottom: 2em;
 }
 
-#body {
+#indexbody {
+  background: red;
+  border: 5px solid green;
   margin-top: 3em;
   text-align: center;
-
 }
 
 #greeting {
   font-size: 2em;
   font-family: papyrus, sans-serif;
+  text-align: center;
 }
 
 #me {
+  display: block;
   border-radius: 4em;
+  margin: auto;
+  margin-top: 3em;
 }
 
 .footer {
-clear:both;
+  clear:both;
   position: absolute;
   bottom: 0;
   background-color: #1250E8;
@@ -61,6 +66,7 @@ clear:both;
   text-align: center;
   border-radius: 2em;
   font-size: 1.15em;
+  padding: .5em;
 }
 
 .resize {
