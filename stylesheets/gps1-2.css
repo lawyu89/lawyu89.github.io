@@ -1,0 +1,23 @@
+/* include your css here */
+h1 {
+          font-family: "Courier New", Courier, monospace;
+        }
+h3 {
+          font-family:"Cambria";
+        }
+
+ p {
+          color: black;
+        }
+
+#container{
+            height: 100%;
+            width: 100%;
+            background-color: green;
+
+        }
+
+#box1, #box2, box3 {
+            display: inline-block;
+            width:25%;
+        }

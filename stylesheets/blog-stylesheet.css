@@ -46,11 +46,21 @@
 }
 
 #body2 p {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.bodytext {
   text-indent: 3em;
   padding-left: 2em;
   padding-right: 2em;
 }
-a span {
+
+ .signature {
+  text-indent: -3em;
+  color: blue;
+}
+span {
   display: none;
 }
 
