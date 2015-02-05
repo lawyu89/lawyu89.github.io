@@ -60,8 +60,14 @@
   text-indent: -3em;
   color: blue;
 }
-span {
+
+#currentlink {
   display: none;
+}
+
+#body2 .codeexample {
+  background: #4f4f4f;
+  font-weight: bold
 }
 
 .figure {

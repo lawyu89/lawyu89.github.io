@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <HEAD>
+    <title>Lawrence's Blog Entries</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  </HEAD>
+    <div id="containter">
+    <div id="header">Lawrence Yu</div>
+    <div class="navbar">
+      <ul>
+        <li class="navitem"><a href="../index.html">Home</a></li>
+        <li class="navitem"><a href="../projects/gps1-2.html">Projects</a></li>
+        <li class="navitem"><a href="#">About Me</a></li>
+        <li class="navitem"><a href="mailto:lawrenceyu1@gmail.com">Contact Me</a></li>
+      </ul>
+    </div>
+    <div id="bodycontainer">
+    <div id="body1">
+        <p><a href="c4-tech-issues.html">Maintenance Headache!</p>
+        <p><a href="t4-enumerable-methods.html"><span id="currentlink">Ruby Enumerable: group_by</span></a></p>
+        <p><a href="c3_thinking-style.html">My Thinking Style: Understanding and Learning</p>
+        <p><a href="t3-arrays-hashes.html">Arrays Versus Hashes</a></p>
+        <p><a href="t2-css-design.html">Introduction to CSS: Margin, Padding, and Borders</a></p>
+        <p><a href="t1-git-blog.html">Introduction to Version Control, Git, and GitHub</a></p>
+        <p><a href="c1-chefs-kitchen.html">My DBC Expectation</a></p>
+      </div>
+      <div id="body2">
+        <h1>Ruby Enumerable:group_by</h1>
+        <h2>What it does and how to use it!</h2>
+        <h4>2/2/15</h4>
+        <section>
+          <p>Hello there! This week’s technical blog will be about the group_by enumerable.  The group_by enumerable is very useful tool you can use to sort information and store that information into a dictionary-like collection hash.  So how does the group_by enumerable actually work and how do we use it? Like most other enumerables, you call on it by placing a period after your array and type the group_by command along with a block to tell it how you want to separate the list by  <span class="codeexample">ImAnArray.group_by {|obj| block}</span>. </p>
+
+          <p>Now that I’ve gone through how to call on the method, let’s go over what happens when you actually use it. First you need to declare your object name closed in the pipe lines. The object name is simply a variable that references the current element in the array it is looking since the group_by method iterates over each element. After declaring the object name, you need to enter a code block that  tells the method how you want to separate the array. For example lets say we have the following array:<span class="codeexample"> array=[0,1,1,2,4,7]</span>. If we wanted to split the array into a hash and group them by even and odds we can do something like <span class"codeexample">array.group_by {|num| num%2==0}</span> which will yield:<span class"codeexample">{true=>[0,2,4], false=>[1,1,7]</span>. Our keys will be "true" and "false" (the keys may value based on the condition, in this example the condition was a boolean experssion), each associated with a value thats an array of [0,2,4] and [1,1,7] respectively</p>
+
+          <p>As you can see, group_by is a power tool you can use to sort arrays into a key-value pair hash. Now that you have a better idea of the group_by enumerable, go on and try it out yourself!
+          </p>
+
+        </section>
+      </div>
+    </div>
+    <div class="footer">
+      <p id="footernotes">Copyright &#169; Lawrence Yu 2015</p>
+      <a href="https://github.com/lawyu89/"><img class="resize" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" alt=""/></a>
+      <a href="https://twitter.com/lawyu89"><img class="resize" src="http://www1.montpellier.inra.fr/ica2013/images/twitter_logo.png" alt=""/></a>
+      <a href="https://www.facebook.com/lawrence.yu.336"><img class="resize" src="https://www.newbrandanalytics.com/blog/wp-content/uploads/2013/12/Facebook-Icon-2-1021x1024.png" alt=""/></a>
+    </div>
+  </div>
+</html>
