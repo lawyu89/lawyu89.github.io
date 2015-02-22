@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <HEAD>
+    <title>Lawrence's Blog Entries</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  </HEAD>
+    <div id="containter">
+    <div id="header">Lawrence Yu</div>
+    <div class="navbar">
+      <ul>
+        <li class="navitem"><a href="../index.html">Home</a></li>
+        <li class="navitem"><a href="../projects/gps1-2.html">Projects</a></li>
+        <li class="navitem"><a href="#">About Me</a></li>
+        <li class="navitem"><a href="mailto:lawrenceyu1@gmail.com">Contact Me</a></li>
+      </ul>
+    </div>
+    <div id="bodycontainer">
+    <div id="body1">
+        <p><span id="currentlink"><a href="t6-oop-concepts.html">Ruby Variable Types and Their Scope!</a></span></p>
+        <p><a href="c6-stereotype-threat.html">Stereotype Threats</p>
+        <p><a href="c5-feedback.html">My Pairing Experience at DBC</a></p>
+        <p><a href="t5-ruby-classes.html">Classes Are In Session!</p>
+        <p><a href="c4-tech-issues.html">Maintenance Headache!</p>
+        <p><a href="t4-enumerable-methods.html">Ruby Enumerable:group_by</a></p>
+        <p><a href="c3_thinking-style.html">My Thinking Style: Understanding and Learning</p>
+        <p><a href="t3-arrays-hashes.html">Arrays Versus Hashes</a></p>
+        <p><a href="t2-css-design.html">Introduction to CSS: Margin, Padding, and Borders</a></p>
+        <p><a href="t1-git-blog.html">Introduction to Version Control, Git, and GitHub</a></p>
+        <p><a href="c1-chefs-kitchen.html">My DBC Expectation</a></p>
+      </div>
+      <div id="body2">
+        <h1>Ruby Variables and Their Scope</h1>
+        <h2>How to Use Different Ruby Variables!</h2>
+        <h4>2/21/15</h4>
+        <section>
+          <p class="bodytext">This week’s technical blog entry will cover the different types of variables that exist in ruby and their scope.  In Ruby, there are five types of variables you can use: local, instance, class, global, and constant. Let’s begin with local variables. Local variables are your normal variables without any symbols at the beginning of it. For example <span class="codeexample"> name = ”Pam”</span>. Local variables are only available in the context it was created in. If the name variable was created inside a method, then calling it outside the method will result in an error since it does not exist outside the method:</p>
+          <img class="figure" src="../imgs/localvariable.png"/>
+          <p class="bodytext">Now moving on to the next type of variables, we have instance variables. Instance variables are variables with an @ sign in front of the name: <span class="codeexample"> @name = ”Lana"</span>. One normally uses instance variables when they want a variable to be available to all methods within an instance of a class. For example, if I created a class Polygon, which takes the number of sides and calculates the interior angle, you might want to have an instance variable “sides” so that another method can use it.</p>
+          <img class="figure" src="../imgs/instancevariable.png"/>
+          <p class="bodytext">The next type of variable is the class variable. Class variables are declared with double @ symbols in front of the variable name like so <span class="codeexample"> @@name = ”Ray”</span> but created outside of methods. Class variables behave exactly like instance variables but are also accessible to all instance of the class it was created from. Typically programmers avoid using class variables because you do not want other class instances to have too much access to it. Of course there are times you may want to use class variable, say for example you wanted to see how many times you used a certain class.</p>
+          <img class="figure" src="../imgs/classvariable.png"/>
+          <p class="bodytext">The fourth type of variable is the global variable. Global variables are declared with the $ symbol:<span class="codeexample"> $name = "Malory"</span>. Global variables like the name suggest means they are accessible anywhere and everywhere. Similar to class variable, one should avoid using global variables.</p>
+          <img class="figure" src="../imgs/globalvariable.png"/>
+          <p class="bodytext">The last type of variable ruby supports are constant variabless. A constant variable is created by naming your variable in all capital letters: <span class="codeexample"> NAME = "Archer"</span>. When constant variables are declared outside of a class, they behave almost identically to global variables, and when they are declared inside of a class, they are most like class variables. The mean difference about constant variables though is that if you tried to overwrite a constant variable, ruby will try an error on your console when you try to run your code.</p>
+          <img class="figure" src="../imgs/constantvariable.png"/>
+          <p class="bodytext">Well that covers all the variables in ruby and their scope. I hope my explanation of the different variables were sufficient in helping you better understand them. See you next week where we start learning Javascript and SQL!</p>
+        </section>
+      </div>
+    </div>
+    <div class="footer">
+      <p id="footernotes">Copyright &#169; Lawrence Yu 2015</p>
+      <a href="https://github.com/lawyu89/"><img class="resize" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" alt=""/></a>
+      <a href="https://twitter.com/lawyu89"><img class="resize" src="http://www1.montpellier.inra.fr/ica2013/images/twitter_logo.png" alt=""/></a>
+      <a href="https://www.facebook.com/lawrence.yu.336"><img class="resize" src="https://www.newbrandanalytics.com/blog/wp-content/uploads/2013/12/Facebook-Icon-2-1021x1024.png" alt=""/></a>
+    </div>
+  </div>
+</html>
