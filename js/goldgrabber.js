@@ -170,16 +170,18 @@ function runGame() {
                 }
             }
             function missionComplete() {
-                var complete=false;
+                // var complete=false;
                 i=0;
+                total=0
                 while (i<coinsImg.length){
                     var coinsImgStyle=getComputedStyle(coinsImg[i],null);
-                    if (parseInt(coinsImgStyle.opacity)===0){
-                        complete=true
-                    } else {
-                        complete=false
-                    }
+                    total += parseInt(coinsImgStyle.opacity)
                     i++;
+                }
+                if (total<1){
+                    complete=true;
+                } else {
+                    complete=false;
                 }
                 return complete;
             }
