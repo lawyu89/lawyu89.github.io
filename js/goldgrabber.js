@@ -105,7 +105,7 @@ function runGame() {
             lepy=parseInt(leprechaunImgStyle.top) || 20;
             goDir=directions[Math.floor(Math.random()*4)]
             if (goDir==='up') {
-                if (lepy>=20 && (lepy-20>0 || lepx>0)) {
+                if (lepy>=20) {
                     leprechaunsImg[i].style.top=(lepy-20)+"px";
                     leprechauns[i].yCoord=lepy-20;
                 }
@@ -121,7 +121,7 @@ function runGame() {
                     leprechauns[i].yCoord=lepy+20;
                 }
             }else if (goDir==='left') {
-                if (lepx>=20 && (lepx-20>0 || lepy>0)){
+                if (lepx>=20) {
                     leprechaunsImg[i].style.left=(lepx-20)+"px";
                     leprechauns[i].xCoord=lepx-20;
                 }
