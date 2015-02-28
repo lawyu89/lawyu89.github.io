@@ -121,7 +121,7 @@ function runGame() {
                     leprechauns[i].yCoord=lepy+20;
                 }
             }else if (goDir==='left') {
-                if (lepx>=20 && (lepx-20>0 && lepy>0)){
+                if (lepx>=20 && (lepx-20>0 || lepy>0)){
                     leprechaunsImg[i].style.left=(lepx-20)+"px";
                     leprechauns[i].xCoord=lepx-20;
                 }
