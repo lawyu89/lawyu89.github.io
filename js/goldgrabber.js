@@ -17,7 +17,8 @@
 //alert user when has completed mission or died
 
 // Initial Code
-function gamespeed() {
+function runGame() {
+    //allow player to choose difficulty speed
     var speed=0;
     var level =prompt("Select Difficulty: Please enter 'normal', 'hard', or 'impossible'")
     if (level==='impossible') {
@@ -27,20 +28,6 @@ function gamespeed() {
     } else {
         speed=120;
     }
-    return speed
-}
-function runGame() {
-    // var gamespeed=0;
-    // var level =prompt("Select Difficulty: Please enter 'normal', 'hard', or 'impossible'")
-    // if (level==='impossible') {
-    //     gamespeed=20;
-    // } else if (level==='hard'){
-    //     gamespeed=60;
-    // } else {
-    //     gamespeed=120;
-    // }
-    var speed = gamespeed()
-
     var coinlocation=[]
     var coinsImg=document.getElementsByClassName('coin')
     var leprechaunsImg=document.getElementsByClassName('leprechaun');
@@ -48,6 +35,7 @@ function runGame() {
     playerImg.style.top=0+'px';
     playerImg.style.left=0+'px';
     var i=0;
+    //randomly generate coin locations
     while (i<coinsImg.length) {
         var h = Math.floor(Math.random()*31)*20;
         var v = Math.floor(Math.random()*31)*20;
@@ -57,6 +45,7 @@ function runGame() {
         coinlocation[i]=[h,v]
         i++;
     }
+    //randomly generate leprechaun starting locations
     leprechauns=document.getElementsByClassName('leprechaun')
     var i=0;
      while (i<leprechauns.length) {
@@ -66,11 +55,10 @@ function runGame() {
         leprechauns[i].style.left=h+"px";
         i++;
     }
+    //store player and leprechaun objects to record location and status
     var player = {
         xCoord:0,
         yCoord:0,
-        gold: 0,
-        completedMission: false,
         alive: true,
     }
     var leprechauns = [
@@ -82,7 +70,8 @@ function runGame() {
         {name:"leprechaun6",xCoord:0,yCoord:0},
         {name:"leprechaun7",xCoord:0,yCoord:0},
     ]
-
+    //remove coin from display if player is on top of coin (set opacity to 0)
+    //placed this check outside other setInteral function with a faster interval speed to avoid someone pressing an arrow button too quickly and not pick up coin.
     window.setInterval(function(){
         i=0
         while (i<coinlocation.length) {
@@ -93,10 +82,9 @@ function runGame() {
             i++;
         }
     },10);
-
+    //create a setInterval function to move leprechauns based on selected speed so they move in real time.
     var movingAI=window.setInterval(function() { ai_movement()},speed);
     function ai_movement() {
-        //alert(speed)
         var i=0;
         var directions=['up','right','down','left'];
         while (i<leprechaunsImg.length){
@@ -121,11 +109,12 @@ function runGame() {
                     leprechauns[i].yCoord=lepy+20;
                 }
             }else if (goDir==='left') {
-                if (lepx>=20) {
+                if (lepx>=20){
                     leprechaunsImg[i].style.left=(lepx-20)+"px";
                     leprechauns[i].xCoord=lepx-20;
                 }
             }
+            //added the !=0 coordinates because player should be safe in house
             if (leprechauns[i].xCoord===player.xCoord && leprechauns[i].yCoord===player.yCoord && player.xCoord!==0 && player.yCoord!==0){
                 player.alive=false
                 stop_game()
@@ -135,6 +124,7 @@ function runGame() {
             }
             i++
         }
+        //onkeydown function to allow player to move with arrow keys
         document.onkeydown = function movePlayer(direction) {
             var playerImgStyle=getComputedStyle(playerImg,null)
             playerx=parseInt(playerImgStyle.left) || 0;
@@ -169,8 +159,9 @@ function runGame() {
                     }
                 }
             }
+            //if player returns to house, check if they collected all coins
             function missionComplete() {
-                // var complete=false;
+                var complete=false;
                 i=0;
                 total=0
                 while (i<coinsImg.length){
@@ -187,22 +178,21 @@ function runGame() {
             }
         }
     }
+    //stop game from moving (gets called when player finishes mission or is caught)
     function stop_game() {
         clearTimeout(movingAI);
         movingAI=null;
     }
 }
 
+
+//prevent window screen from moving when arrow keys are pressed
 window.addEventListener("keydown", function(e) {
     if([13,37, 38, 39, 40].indexOf(e.keyCode) > -1) {
         e.preventDefault();
     }
 }, false);
 
-
-
-
-// Refactored Code
 
 
 
