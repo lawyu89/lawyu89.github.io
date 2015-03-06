@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Cheat Sheet!</title>
+        <link type="text/css" rel="stylesheet" href="DOMstylesheet.css"/>
+
+    </head>
+    <body>
+        <h1 id = "header">DOM Cheat Sheet</h1>
+        <div id="body">
+            <h3>Accessing DOM Elements</h3>
+            <p>HTML DOM elements can accessed by JavaScript using three different methods. You can grab elements through their id's, their tag names, and their class. This allow JavaScript to see different DOM elements and change their properties. Accessing elements with each of the these methods are shown below:</p>
+            <script src="https://gist.github.com/lawyu89/8f1d585ea4573c5ee245.js"></script>
+            <h3>Changing DOM Elements</h3>
+            <p>From JavaScript you can change elements text, attribute, and their CSS styles.
+                <ul>
+                    <li><code>element.innerHTML</code></li>
+                    <li><code>element.attribute</code></li>
+                    <li><code>element.style."CSS property"</code></li>
+                </ul></p>
+
+                <p>The .innerHTML method allows JavaScript to alter the text in the html file. The .attribute method changes the element's attribute. And the .style method allows JavaScript to change a CSS property. An example below shows how one would change the text and color using the .innerHTML and .style methods:
+                <script src="https://gist.github.com/lawyu89/7fea11d3667ece0513b3.js"></script>
+
+            </p>
+
+            <h3>Handling Events</h3>
+            <p>Javascript can react to certain HTML user events like, clicking, or mousing over and object. These commands call on JavaScript to run its code:
+              <ul>
+                <li>onload= : runs whatever function when screen is loaded</li>
+<li>onunload= : runs whatever function when someone is about to leave page</li>
+<li>onchange=:  runs functions whenever something is changed (like a input or form)</li>
+<li>onmouseover=: runs functions when mouse is over element</li>
+<li>onmouseout=: runs functions when mouse is in element and then leaves</li>
+<li>onfocus=: runs functions when an input field gets focus</li>
+<li>onresize=: runs functions when browser window is resized
+</li>
+
+            </ul>
+          </p>
+          <p>This simple example uses onclick command in HTML that calls on the Javascript functions which displays the date:
+     <script src="https://gist.github.com/lawyu89/ae790fb3ce55575e421f.js"></script></p>
+        </div>
+    </body>
+</html>
