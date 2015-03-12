@@ -1,69 +1,177 @@
 <!DOCTYPE html>
-<html>
-  <HEAD>
-    <title>Lawrence's Blog Entries</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
-    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
-  </HEAD>
-    <div id="containter">
-    <div id="header">Lawrence Yu</div>
-    <div class="navbar">
-      <ul>
-        <li class="navitem"><a href="../index.html">Home</a></li>
-        <li class="navitem"><a href="../projects/goldgrabber.html">Projects</a></li>
-        <li class="navitem"><a href="#">About Me</a></li>
-        <li class="navitem"><a href="mailto:lawrenceyu1@gmail.com">Contact Me</a></li>
-      </ul>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Lawrence Yu Blog Posts</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/blog-post.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                </button>
+                <p class="navbar-brand" href="#">Lawrence Yu</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="../../index.html">Home</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Blog Post Content Column -->
+            <div class="col-lg-8">
+
+                <!-- Blog Post -->
+
+                <!-- Title -->
+                <h1>Classes Are In Session!</h1>
+                <h3>How to Make Your Own Class in Ruby!</h2>
+                <!-- Author -->
+                <p class="lead">
+                    by Lawrence Yu
+                </p>
+
+                <hr>
+
+                <!-- Date/Time -->
+                <p><span class="glyphicon glyphicon-time"></span> Posted on February 15, 2015</p>
+
+                <!-- Preview Image -->
+                <!-- <img class="img-responsive" src="http://placehold.it/900x300" alt=""> -->
+
+                <hr>
+
+                <!-- Post Content -->
+                <p class="bodytext">This week’s technical blog topic is about Classes! First off, if you’ve done any programming at all, you’ve most like have already used a variety of classes. For instance, when you type a string and manipulate it with something like .capitalize, you are use the String class and a methods from the string class! Similarly numbers belong to the Integers class and arrays in the Array class.  In ruby you can create your own classes to do different things! Creating classes is incredibly useful to group methods for objects that are the same. They are also useful to model real-world objects and concepts! How about a game of Rock, Paper, Scissors?</p>
+
+                <p class="bodytext">First, let’s talk about how to create a class. To create a class can define it by stating it’s a class followed by the name of the class</p>
+                <img class="figure" src="../imgs/defineclass.png"/>
+                <p>The next step of creating your class is to initialize it with the special method “initialize”. This step is where you define the characteristic variables of your class. In most cases, you want these variables to be instance variables by adding a @ symbol in front of the variable name. Instance variables are variables that are accessible to all methods within your class. </p>
+                <img class="figure" src="../imgs/initializeclass.png"/>
+                <p>In Rock Paper Scissors, we can model the game by initializing the different options you can choose from and the corresponding choice that it losses too. We can also set an opponent(i.e the computer) that chooses from one of the three options. If we wanted too, we can also initialize the player here as well (for this example, I opted not too).</p>
+
+                <p>The final step in creating your class is to add the different methods. For my example, in a game of Rock, Paper, Scissors you can make a guess and see if you beat your opponent. Therefore, we can add a method call "guess", which takes the user's choice and compares it with the computer's choice to determine who wins.</p>
+                <img class="figure" src="../imgs/methodclass.png"/>
+
+                <p>With this class, we can now play Rock, Paper, Scissors
+                with the computer! All we need to do now is create a new object for this class and we can play against the computer with the guess method!</p>
+                <img class="figure" src="../imgs/useclass.png"/>
+
+                <p class="bodytext">In this example, I modeled a very simple game of Rock, Paper, Scissors but you could potentially model just about anything with classes. Classes conveniently allows us to group methods for a particular object we want to model. Now go out there and try it yourself!</p>
+                <hr>
+
+                <!-- Blog Comments -->
+
+                <!-- Comments Form -->
+                <div class="well">
+                        <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    /* * * CONFIGURATION VARIABLES * * */
+                    var disqus_shortname = 'lawyu89';
+
+                    /* * * DON'T EDIT BELOW THIS LINE * * */
+                    (function() {
+                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+                </div>
+            </div>
+
+
+            <!-- Blog Sidebar Widgets Column -->
+            <div class="col-md-4">
+
+                <!-- Blog Categories Well -->
+                <div class="well" id="sidebar">
+                    <h4>Previous Blog Entries</h4>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ul class="list-unstyled">
+                                <li><a href="t8-tech.html">Sorting Out the Sorts!</a></li>
+                                <li><a href="c8-conflict.html">Past Conflicts</a></li>
+                                <li><a href="t7-JavaScript.html">Looping in JavaScript Vs Ruby!</a></li>
+                                <li><a href="c7-values.html">The Things I Value!</a></li>
+                                <li><a href="t6-oop-concepts.html">Ruby Variable Types and Their Scope!</a></li>
+                                <li><a href="c6-stereotype-threat.html">Stereotype Threats</a></li>
+                                <li><a href="c5-feedback.html">Pairing and Feedback</a></li>
+                                <li><a href="t5-ruby-classes.html"><span id="currentlink">Classes Are In Session!</span></li>
+                                <li><a href="c4-tech-issues.html">Maintenance Headache!</li>
+                                <li><a href="t4-enumerable-methods.html">Ruby Enumerable:group_by</a></li>
+                                <li><a href="c3_thinking-style.html">My Thinking Style: Understanding and Learning</li>
+                                <li><a href="t3-arrays-hashes.html">Arrays Versus Hashes</a></li>
+                                <li><a href="t2-css-design.html">Introduction to CSS: Margin, Padding, and Borders</a></li>
+                                <li><a href="t1-git-blog.html">Introduction to Version Control, Git, and GitHub</a></li>
+                                <li><a href="c1-chefs-kitchen.html">My DBC Expectation</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; 2015</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
     </div>
-    <div id="bodycontainer">
-    <div id="body1">
-        <p><a href="t8-tech.html">Sorting Out the Sorts!</a></p>
-        <p><a href="c8-conflict.html">Past Conflicts</a></p>
-        <p><a href="t7-JavaScript.html">Looping in JavaScript Vs Ruby!</a></p>
-        <p><a href="c7-values.html">The Things I Value!</a></p>
-        <p><a href="t6-oop-concepts.html">Ruby Variable Types and Their Scope!</a></p>
-        <p><a href="c6-stereotype-threat.html">Stereotype Threats</a></p>
-        <p><a href="c5-feedback.html">My Pairing Experience at DBC</a></p>
-        <p><a href="t5-ruby-classes.html"><span id="currentlink">Classes Are In Session!<span></a></p>
-        <p><a href="c4-tech-issues.html">Maintenance Headache!</p>
-        <p><a href="t4-enumerable-methods.html">Ruby Enumerable:group_by</a></p>
-        <p><a href="c3_thinking-style.html">My Thinking Style: Understanding and Learning</p>
-        <p><a href="t3-arrays-hashes.html">Arrays Versus Hashes</a></p>
-        <p><a href="t2-css-design.html">Introduction to CSS: Margin, Padding, and Borders</a></p>
-        <p><a href="t1-git-blog.html">Introduction to Version Control, Git, and GitHub</a></p>
-        <p><a href="c1-chefs-kitchen.html">My DBC Expectation</a></p>
-      </div>
-      <div id="body2">
-        <h1>Classes Are In Session!</h1>
-        <h2>How to Make Your Own Class!</h2>
-        <h4>2/15/15</h4>
-        <section>
+    <!-- /.container -->
 
-          <p class="bodytext">This week’s technical blog topic is about Classes! First off, if you’ve done any programming at all, you’ve most like have already used a variety of classes. For instance, when you type a string and manipulate it with something like .capitalize, you are use the String class and a methods from the string class! Similarly numbers belong to the Integers class and arrays in the Array class.  In ruby you can create your own classes to do different things! Creating classes is incredibly useful to group methods for objects that are the same. They are also useful to model real-world objects and concepts! How about a game of Rock, Paper, Scissors?</p>
+    <!-- jQuery -->
+    <script src="../js/jquery.js"></script>
 
-          <p class="bodytext">First, let’s talk about how to create a class. To create a class can define it by stating it’s a class followed by the name of the class</p>
-          <img class="figure" src="../imgs/defineclass.png"/>
-          <p>The next step of creating your class is to initialize it with the special method “initialize”. This step is where you define the characteristic variables of your class. In most cases, you want these variables to be instance variables by adding a @ symbol in front of the variable name. Instance variables are variables that are accessible to all methods within your class. </p>
-          <img class="figure" src="../imgs/initializeclass.png"/>
-          <p>In Rock Paper Scissors, we can model the game by initializing the different options you can choose from and the corresponding choice that it losses too. We can also set an opponent(i.e the computer) that chooses from one of the three options. If we wanted too, we can also initialize the player here as well (for this example, I opted not too).</p>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
 
-          <p>The final step in creating your class is to add the different methods. For my example, in a game of Rock, Paper, Scissors you can make a guess and see if you beat your opponent. Therefore, we can add a method call "guess", which takes the user's choice and compares it with the computer's choice to determine who wins.</p>
-          <img class="figure" src="../imgs/methodclass.png"/>
+</body>
 
-          <p>With this class, we can now play Rock, Paper, Scissors
-          with the computer! All we need to do now is create a new object for this class and we can play against the computer with the guess method!</p>
-          <img class="figure" src="../imgs/useclass.png"/>
-
-          <p class="bodytext">In this example, I modeled a very simple game of Rock, Paper, Scissors but you could potentially model just about anything with classes. Classes conveniently allows us to group methods for a particular object we want to model. Now go out there and try it yourself!</p>
-        </section>
-      </div>
-    </div>
-    <div class="footer">
-      <p id="footernotes">Copyright &#169; Lawrence Yu 2015</p>
-      <a href="https://github.com/lawyu89/"><img class="resize" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" alt=""/></a>
-      <a href="https://twitter.com/lawyu89"><img class="resize" src="http://www1.montpellier.inra.fr/ica2013/images/twitter_logo.png" alt=""/></a>
-      <a href="https://www.facebook.com/lawrence.yu.336"><img class="resize" src="https://www.newbrandanalytics.com/blog/wp-content/uploads/2013/12/Facebook-Icon-2-1021x1024.png" alt=""/></a>
-    </div>
-  </div>
 </html>

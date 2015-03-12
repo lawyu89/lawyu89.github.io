@@ -1,71 +1,179 @@
 <!DOCTYPE html>
-<html>
-  <HEAD>
-    <title>Lawrence's Blog Entries</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
-    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
-  </HEAD>
-    <div id="containter">
-    <div id="header">Lawrence Yu</div>
-    <div class="navbar">
-      <ul>
-        <li class="navitem"><a href="../index.html">Home</a></li>
-        <li class="navitem"><a href="../projects/goldgrabber.html">Projects</a></li>
-        <li class="navitem"><a href="#">About Me</a></li>
-        <li class="navitem"><a href="mailto:lawrenceyu1@gmail.com">Contact Me</a></li>
-      </ul>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Lawrence Yu Blog Posts</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/blog-post.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                </button>
+                <p class="navbar-brand" href="#">Lawrence Yu</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="../../index.html">Home</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Blog Post Content Column -->
+            <div class="col-lg-8">
+
+                <!-- Blog Post -->
+
+                <!-- Title -->
+                <h1>Introduction to Version Control, Git, and GitHub</h1>
+                <h3>Lesson 1 of phase 0</h2>
+                <!-- Author -->
+                <p class="lead">
+                    by Lawrence Yu
+                </p>
+
+                <hr>
+
+                <!-- Date/Time -->
+                <p><span class="glyphicon glyphicon-time"></span> Posted on January 16, 2015</p>
+
+                <!-- Preview Image -->
+                <!-- <img class="img-responsive" src="http://placehold.it/900x300" alt=""> -->
+
+                <hr>
+
+                <!-- Post Content -->
+                <p class="bodytext">
+                Week 1 of phase 0 in DBC has been interesting to say the least. I've already went through a ton of computer topics and commands which I'm happy to reiterate some of it here to help out anyone that might be interested in learning or thinking about switching to computer science.
+                </p>
+
+                <p class="bodytext">
+                First, I'll go over is something called version control. Version control system is something developers use to frequently make save points of a code to record all the changes made to it. That way if you made a error in your code somewhere along the way, you can go back to an earlier save point and figure out just what went wrong. Many develops uses version control tools of some sort, Git being one of the more popular ones.
+                </p>
+
+                <p class="bodytext">
+                Git is an open-source version control tool you can use in your computer (open-source means that the source/code is available for everyone to see, edit, or use however they see fit). Git allows the user to view code files in like in branches. The master branch stores your main code but you can have off branches that takes a copy of the whole or parts of master branch. With these off branches you can make changes to the code (called commits). These commits tracks all the changes you made. After you thoroughly reviewed changes made, you can apply the commits made and then merge it with your master branch. Git is so widely used, there's even a way to transfer your codes from your local computer to a remote server using GitHub.
+                </p>
+                <p class="bodytext">
+                GitHub is a platform that developers to can use to remotely store their code and save their progress. It's similar to git except the files are stored remotely on a server rather than inside your computer. Since the files are stored on a server, you can edit and commits changes from your computer and then send it to GitHub. The major benifit of GitHub is that is allows multiple people to access the same code and work on it collaboratively without being on the same computer! This is incredibly useful for large projects since you can have different people working on different parts of a project working from different parts of the world instead of everyone being in the same room.
+                </p>
+                <p class="bodytext">
+                Well that it for this week on things I learned this from week 1 of phase 0 at DBC. Stay tuned for next weeks topics as we cover more advance material!
+                </p>
+
+                <hr>
+
+                <!-- Blog Comments -->
+
+                <!-- Comments Form -->
+                <div class="well">
+                        <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    /* * * CONFIGURATION VARIABLES * * */
+                    var disqus_shortname = 'lawyu89';
+
+                    /* * * DON'T EDIT BELOW THIS LINE * * */
+                    (function() {
+                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+                </div>
+            </div>
+
+
+            <!-- Blog Sidebar Widgets Column -->
+            <div class="col-md-4">
+
+                <!-- Blog Categories Well -->
+                <div class="well" id="sidebar">
+                    <h4>Previous Blog Entries</h4>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ul class="list-unstyled">
+                                <li><a href="t8-tech.html">Sorting Out the Sorts!</a></li>
+                                <li><a href="c8-conflict.html">Past Conflicts</a></li>
+                                <li><a href="t7-JavaScript.html">Looping in JavaScript Vs Ruby!</a></li>
+                                <li><a href="c7-values.html">The Things I Value!</a></li>
+                                <li><a href="t6-oop-concepts.html">Ruby Variable Types and Their Scope!</a></li>
+                                <li><a href="c6-stereotype-threat.html">Stereotype Threats</a></li>
+                                <li><a href="c5-feedback.html">Pairing and Feedback</a></li>
+                                <li><a href="t5-ruby-classes.html">Classes Are In Session!</li>
+                                <li><a href="c4-tech-issues.html">Maintenance Headache!</li>
+                                <li><a href="t4-enumerable-methods.html">Ruby Enumerable:group_by</a></li>
+                                <li><a href="c3_thinking-style.html">My Thinking Style: Understanding and Learning</li>
+                                <li><a href="t3-arrays-hashes.html">Arrays Versus Hashes</a></li>
+                                <li><a href="t2-css-design.html">Introduction to CSS: Margin, Padding, and Borders</a></li>
+                                <li><a href="t1-git-blog.html"><span id="currentlink">Introduction to Version Control, Git, and GitHub</span></a></li>
+                                <li><a href="c1-chefs-kitchen.html">My DBC Expectation</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; 2015</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
     </div>
-    <div id="body1">
-        <p><a href="t8-tech.html">Sorting Out the Sorts!</a></p>
-        <p><a href="c8-conflict.html">Past Conflicts</a></p>
-        <p><a href="t7-JavaScript.html">Looping in JavaScript Vs Ruby!</a></p>
-        <p><a href="c7-values.html">The Things I Value!</a></p>
-        <p><a href="t6-oop-concepts.html">Ruby Variable Types and Their Scope!</a></p>
-        <p><a href="c6-stereotype-threat.html">Stereotype Threats</a></p>
-        <p><a href="c5-feedback.html">My Pairing Experience at DBC</a></p>
-        <p><a href="t5-ruby-classes.html">Classes Are In Session!</p>
-        <p><a href="c4-tech-issues.html">Maintenance Headache!</p>
-        <p><a href="t4-enumerable-methods.html">Ruby Enumerable:group_by</a></p>
-        <p><a href="c3_thinking-style.html">My Thinking Style: Understanding and Learning</p>
-        <p><a href="t3-arrays-hashes.html">Arrays Versus Hashes</a></p>
-        <p><a href="t2-css-design.html">Introduction to CSS: Margin, Padding, and Borders</a></p>
-        <p><a href="t1-git-blog.html"><span id="currentlink">Introduction to Version Control, Git, and GitHub</a></span></p>
-        <p><a href="c1-chefs-kitchen.html">My DBC Expectation</a></p>
-      </div>
-      <div id="body2">
-        <h1>Introduction to Version Control, Git, and GitHub</h1>
-        <h2>Lessons of my first week in phase 0</h2>
-        <h4>1/16/2015</h4>
+    <!-- /.container -->
 
-        <section>
-          <p class="bodytext">
-            First week of phase 0 in DBC has been interesting to say the least. I've already went through a ton of computer topics and commands which I'm happy to reiterate some of it here to help out anyone that might be interested in learning or thinking about switching to computer science.
-          </p>
+    <!-- jQuery -->
+    <script src="../js/jquery.js"></script>
 
-          <p class="bodytext">
-            First, I'll go over is something called version control. Version control system is something developers use to frequently make save points of a code to record all the changes made to it. That way if you made a error in your code somewhere along the way, you can go back to an earlier save point and figure out just what went wrong. Many develops uses version control tools of some sort, Git being one of the more popular ones.
-          </p>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
 
-          <p class="bodytext">
-            Git is an open-source version control tool you can use in your computer (open-source means that the source/code is available for everyone to see, edit, or use however they see fit). Git allows the user to view code files in like in branches. The master branch stores your main code but you can have off branches that takes a copy of the whole or parts of master branch. With these off branches you can make changes to the code (called commits). These commits tracks all the changes you made. After you thoroughly reviewed changes made, you can apply the commits made and then merge it with your master branch. Git is so widely used, there's even a way to transfer your codes from your local computer to a remote server using GitHub.
-          </p>
-          <p class="bodytext">
-            GitHub is a platform that developers to can use to remotely store their code and save their progress. It's similar to git except the files are stored remotely on a server rather than inside your computer. Since the files are stored on a server, you can edit and commits changes from your computer and then send it to GitHub. The major benifit of GitHub is that is allows multiple people to access the same code and work on it collaboratively without being on the same computer! This is incredibly useful for large projects since you can have different people working on different parts of a project working from different parts of the world instead of everyone being in the same room.
-          </p>
-          <p class="bodytext">
-            Well that it for this week on things I learned this from week 1 of phase 0 at DBC. Stay tuned for next weeks topics as we cover more advance material!
-          </p>
-          <p>Till next time, Lawrence here signing off!
-          </p>
+</body>
 
-        </section>
-      </div>
-    <div class="footer">
-      <p id="footernotes">Copyright &#169; Lawrence Yu 2015</p>
-      <a href="https://github.com/lawyu89/"><img class="resize" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" alt=""/></a>
-      <a href="https://twitter.com/lawyu89"><img class="resize" src="http://www1.montpellier.inra.fr/ica2013/images/twitter_logo.png" alt=""/></a>
-      <a href="https://www.facebook.com/lawrence.yu.336"><img class="resize" src="https://www.newbrandanalytics.com/blog/wp-content/uploads/2013/12/Facebook-Icon-2-1021x1024.png" alt=""/></a>
-    </div>
-  </div>
 </html>

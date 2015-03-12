@@ -1,70 +1,180 @@
 <!DOCTYPE html>
-<html>
-  <HEAD>
-    <title>Lawrence's Blog Entries</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
-    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
-  </HEAD>
-    <div id="containter">
-    <div id="header">Lawrence Yu</div>
-    <div class="navbar">
-      <ul>
-        <li class="navitem"><a href="../index.html">Home</a></li>
-        <li class="navitem"><a href="../projects/goldgrabber.html">Projects</a></li>
-        <li class="navitem"><a href="#">About Me</a></li>
-        <li class="navitem"><a href="mailto:lawrenceyu1@gmail.com">Contact Me</a></li>
-      </ul>
-    </div>
-    <div id="bodycontainer">
-    <div id="body1">
-        <p><a href="t8-tech.html">Sorting Out the Sorts!</a></p>
-        <p><a href="c8-conflict.html">Past Conflicts</a></p>
-        <p><a href="t7-JavaScript.html">Looping in JavaScript Vs Ruby!</a></p>
-        <p><span id="currentlink"><a href="c7-values.html">The Things I Value!</a></span></p>
-        <p><a href="t6-oop-concepts.html">Ruby Variable Types and Their Scope!</a></p>
-        <p><a href="c6-stereotype-threat.html">Stereotype Threats</a></p>
-        <p><a href="c5-feedback.html">My Pairing Experience at DBC</a></p>
-        <p><a href="t5-ruby-classes.html">Classes Are In Session!</p>
-        <p><a href="c4-tech-issues.html">Maintenance Headache!</p>
-        <p><a href="t4-enumerable-methods.html">Ruby Enumerable:group_by</a></p>
-        <p><a href="c3_thinking-style.html">My Thinking Style: Understanding and Learning</p>
-        <p><a href="t3-arrays-hashes.html">Arrays Versus Hashes</a></p>
-        <p><a href="t2-css-design.html">Introduction to CSS: Margin, Padding, and Borders</a></p>
-        <p><a href="t1-git-blog.html">Introduction to Version Control, Git, and GitHub</a></p>
-        <p><a href="c1-chefs-kitchen.html">My DBC Expectation</a></p>
-      </div>
-      <div id="body2">
-        <h1>The Things I Value!</h1>
-        <h2>What Do I Care About</h2>
-        <h4>2/28/15</h4>
-        <section>
-           <p class="bodytext">This week’s cultural blog is about reflecting on our past moments where we were most satisfied, happy, or proud and the values that come to mind. For me, when I think about these moments the values that resonate with me most are as follows (in no particular order):</p>
-          <ul>
-            <li>Accomplishments:3</li>
-            <li>Challenge:4</li>
-            <li>Control:4</li>
-            <li>Friendships:5</li>
-            <li>Helping Others:4</li>
-            <li>Knowledge:4</li>
-            <li>Tenacity:5</li>
-            <li>Creativity:4</li>
-            <li>Enthusiasm:5</li>
-          </ul>
-          <p class="bodytext">All of these values are important to me because they define who I am as a person. For example, tenacity is defined by “the quality or fact of being very determined”. The value resonates with me because I’m terrible at giving up. Whenever I set myself to do something, regardless of hard difficult or challenging it may be, I’ll do my absolute best to see through what I started and reach my goal. Being able to persevere through tough times has always been my strong suit.</p>
+<html lang="en">
 
-          <p class="bodytext">There’s been some people who’ve asked my for advice on technical things and sometimes wonder how I’ve managed to get to where I am technically. My response to them is simple be tenacious and enthusiastic in learning because I recall times when I was in their position feeling overwhelmed by new material. It just takes a lot of practice and patience to learn about new things like how to code in a new language. Giving advice is also fun for me because I love helping out others and creating new friendships</p>
+<head>
 
-          <p class="bodytext">Thinking back to stereotype threats, the values that are important to me are more than enough to keep me from being bogged down by it.  Obviously completing DBC’s rigorous bootcamp will require tons of effort and there may be times where I might feel down or overwhelm but in those times I’ll just think back and focus on my goal. I just need to get into my “I can do anything” mindset by thinking about all the numerous challenges I’ve overcome in my life and that this is no different. </p>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-        </section>
-      </div>
+    <title>Lawrence Yu Blog Posts</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/blog-post.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                </button>
+                <p class="navbar-brand" href="#">Lawrence Yu</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="../../index.html">Home</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Blog Post Content Column -->
+            <div class="col-lg-8">
+
+                <!-- Blog Post -->
+
+                <!-- Title -->
+                <h1>The Things I Value!</h1>
+                <h3>What Do I Care About?</h2>
+                <!-- Author -->
+                <p class="lead">
+                    by Lawrence Yu
+                </p>
+
+                <hr>
+
+                <!-- Date/Time -->
+                <p><span class="glyphicon glyphicon-time"></span> Posted on February 28, 2015</p>
+
+                <!-- Preview Image -->
+                <!-- <img class="img-responsive" src="http://placehold.it/900x300" alt=""> -->
+
+                <hr>
+
+                <!-- Post Content -->
+                <p class="bodytext">This week’s cultural blog is about reflecting on our past moments where we were most satisfied, happy, or proud and the values that come to mind. For me, when I think about these moments the values that resonate with me most are as follows (in no particular order):</p>
+                  <ul>
+                    <li>Accomplishments:3</li>
+                    <li>Challenge:4</li>
+                    <li>Control:4</li>
+                    <li>Friendships:5</li>
+                    <li>Helping Others:4</li>
+                    <li>Knowledge:4</li>
+                    <li>Tenacity:5</li>
+                    <li>Creativity:4</li>
+                    <li>Enthusiasm:5</li>
+                  </ul>
+                <p class="bodytext">All of these values are important to me because they define who I am as a person. For example, tenacity is defined by “the quality or fact of being very determined”. The value resonates with me because I’m terrible at giving up. Whenever I set myself to do something, regardless of hard difficult or challenging it may be, I’ll do my absolute best to see through what I started and reach my goal. Being able to persevere through tough times has always been my strong suit.</p>
+
+                <p class="bodytext">There’s been some people who’ve asked my for advice on technical things and sometimes wonder how I’ve managed to get to where I am technically. My response to them is simple be tenacious and enthusiastic in learning because I recall times when I was in their position feeling overwhelmed by new material. It just takes a lot of practice and patience to learn about new things like how to code in a new language. Giving advice is also fun for me because I love helping out others and creating new friendships</p>
+
+                <p class="bodytext">Thinking back to stereotype threats, the values that are important to me are more than enough to keep me from being bogged down by it.  Obviously completing DBC’s rigorous bootcamp will require tons of effort and there may be times where I might feel down or overwhelm but in those times I’ll just think back and focus on my goal. I just need to get into my “I can do anything” mindset by thinking about all the numerous challenges I’ve overcome in my life and that this is no different. </p>
+
+
+                <hr>
+
+                <!-- Blog Comments -->
+
+                <!-- Comments Form -->
+                <div class="well">
+                        <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    /* * * CONFIGURATION VARIABLES * * */
+                    var disqus_shortname = 'lawyu89';
+
+                    /* * * DON'T EDIT BELOW THIS LINE * * */
+                    (function() {
+                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+                </div>
+            </div>
+
+
+            <!-- Blog Sidebar Widgets Column -->
+            <div class="col-md-4">
+
+                <!-- Blog Categories Well -->
+                <div class="well" id="sidebar">
+                    <h4>Previous Blog Entries</h4>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ul class="list-unstyled">
+                                <li><a href="t8-tech.html">Sorting Out the Sorts!</a></li>
+                                <li><a href="c8-conflict.html">Past Conflicts</a></li>
+                                <li><a href="t7-JavaScript.html">Looping in JavaScript Vs Ruby!</a></li>
+                                <li><a href="c7-values.html"><span id="currentlink">The Things I Value!</span></a></li>
+                                <li><a href="t6-oop-concepts.html">Ruby Variable Types and Their Scope!</a></li>
+                                <li><a href="c6-stereotype-threat.html">Stereotype Threats</a></li>
+                                <li><a href="c5-feedback.html">Pairing and Feedback</a></li>
+                                <li><a href="t5-ruby-classes.html">Classes Are In Session!</li>
+                                <li><a href="c4-tech-issues.html">Maintenance Headache!</li>
+                                <li><a href="t4-enumerable-methods.html">Ruby Enumerable:group_by</a></li>
+                                <li><a href="c3_thinking-style.html">My Thinking Style: Understanding and Learning</li>
+                                <li><a href="t3-arrays-hashes.html">Arrays Versus Hashes</a></li>
+                                <li><a href="t2-css-design.html">Introduction to CSS: Margin, Padding, and Borders</a></li>
+                                <li><a href="t1-git-blog.html">Introduction to Version Control, Git, and GitHub</a></li>
+                                <li><a href="c1-chefs-kitchen.html">My DBC Expectation</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; 2015</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
     </div>
-    <div class="footer">
-      <p id="footernotes">Copyright &#169; Lawrence Yu 2015</p>
-      <a href="https://github.com/lawyu89/"><img class="resize" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" alt=""/></a>
-      <a href="https://twitter.com/lawyu89"><img class="resize" src="http://www1.montpellier.inra.fr/ica2013/images/twitter_logo.png" alt=""/></a>
-      <a href="https://www.facebook.com/lawrence.yu.336"><img class="resize" src="https://www.newbrandanalytics.com/blog/wp-content/uploads/2013/12/Facebook-Icon-2-1021x1024.png" alt=""/></a>
-    </div>
-  </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+
+</body>
+
 </html>

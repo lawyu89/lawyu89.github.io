@@ -1,60 +1,171 @@
 <!DOCTYPE html>
-<html>
-  <HEAD>
-    <title>Lawrence's Blog Entries</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
-    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
-  </HEAD>
-    <div id="containter">
-    <div id="header">Lawrence Yu</div>
-    <div class="navbar">
-      <ul>
-        <li class="navitem"><a href="../index.html">Home</a></li>
-        <li class="navitem"><a href="../projects/goldgrabber.html">Projects</a></li>
-        <li class="navitem"><a href="#">About Me</a></li>
-        <li class="navitem"><a href="mailto:lawrenceyu1@gmail.com">Contact Me</a></li>
-      </ul>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Lawrence Yu Blog Posts</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/blog-post.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                </button>
+                <p class="navbar-brand" href="#">Lawrence Yu</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="../../index.html">Home</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Blog Post Content Column -->
+            <div class="col-lg-8">
+
+                <!-- Blog Post -->
+
+                <!-- Title -->
+                <h1>Sorting Out the Sorts!</h1>
+                <h3>Comparing and Contrasting Types of Sorting Methods</h2>
+                <!-- Author -->
+                <p class="lead">
+                    by Lawrence Yu
+                </p>
+
+                <hr>
+
+                <!-- Date/Time -->
+                <p><span class="glyphicon glyphicon-time"></span> Posted on March 6, 2015</p>
+
+                <!-- Preview Image -->
+                <!-- <img class="img-responsive" src="http://placehold.it/900x300" alt=""> -->
+
+                <hr>
+
+                <!-- Post Content -->
+                <p class="bodytext">In this week’s technical blog, I’ll be going over some common sorting methods programmers have developed but first let me go over the idea of sorting algorithms.  Sorting algorithms, as the name implies, are used to sort elements in a list into a certain order. Typically, the sorting order is numerical and lexicographical (dictionary or alphabetical). Sort algorithms are classified by their computational complexity using big O(n) notation, where n represents the number of elements. This value correlates to the computation time. I won’t go into detail about big O notation, just note efficiency is inversely proportionate to the value inside the parenthesis. There is a great deal of research out there trying to find the fastest and most efficient sorting algorithm.</p>
+
+                <p class="bodytext">The first sorting algorithm I’ll discuss is the bubble sort algorithm. Bubble sort is one of the most basic and simplest sorts. Bubble sort compares adjacent items and swaps their positions if they are not ordered correctly.  The algorithm will continue this process until no more swaps can be made. In terms of performance, on average it has an O(n2) complexity meaning its efficiency decreases exponentially as the list size increases. Therefore, while bubble sort is simple to implement, it should almost never be used to sort lists</p>
+
+                <p class="bodytext">A much more efficient algorithm programmers use is the quick sort. Also sometimes referred as the partition-exchange sort, is a comparison sort where an element is picked as an pivot point. Two new arrays are created where one array stores values greater than the pivot element and the other for lower values (values equal to the pivot element can go to either array).  The index of the pivot point is recorded and then a new pivot point is chosen from each sub array. This process is repeated until it can no longer form sub arrays. Finally, the indices all of the pivots elements are used to generate the sorted list. Mathematical analysis of quicksort shows that quick sort, on average, has complexity of  O(nlog(n)). </p>
+
+                <p class="bodytext">Another algorithm with similar efficiency that programmers often use is call the merge sort. In the merge sort method, the list is first broken down in n single elements sublists. Each element is compared, sorted, and merged with an adjacent list. This process is then repeated until only one list remains (which would be your sorted list). Like the quick sort algorithm, merge sort has a computation complexity of O(nlog(n)).</p>
+
+                <p class="bodytext">Too reiterate why you want to use quick or merge sort over bubble sort, suppose we had a computer that took a millisecond to computed something. Using bubble sort to sort something with 1,000 items would take 1000 seconds to compute. Both the quick sort and merge would take on average merely 3 seconds to compute! Each of the methods listed above can be tweaked and optimized to run faster. There are also tons of different sorts other there as well but so far the fastest computing ones are limited to O(nlog(n)). Perhaps after reading this blog, you’ll go other there and try to develop a new algorithm that can sort a list even faster!</p>
+
+                <hr>
+
+                <!-- Blog Comments -->
+
+                <!-- Comments Form -->
+                <div class="well">
+                        <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    /* * * CONFIGURATION VARIABLES * * */
+                    var disqus_shortname = 'lawyu89';
+
+                    /* * * DON'T EDIT BELOW THIS LINE * * */
+                    (function() {
+                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+                </div>
+            </div>
+
+
+            <!-- Blog Sidebar Widgets Column -->
+            <div class="col-md-4">
+
+                <!-- Blog Categories Well -->
+                <div class="well" id="sidebar">
+                    <h4>Previous Blog Entries</h4>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ul class="list-unstyled">
+                                <li><a href="t8-tech.html"><span id="currentlink">Sorting Out the Sorts!</span></a></li>
+                                <li><a href="c8-conflict.html">Past Conflicts</a></li>
+                                <li><a href="t7-JavaScript.html">Looping in JavaScript Vs Ruby!</a></li>
+                                <li><a href="c7-values.html">The Things I Value!</a></li>
+                                <li><a href="t6-oop-concepts.html">Ruby Variable Types and Their Scope!</a></li>
+                                <li><a href="c6-stereotype-threat.html">Stereotype Threats</a></li>
+                                <li><a href="c5-feedback.html">Pairing and Feedback</a></li>
+                                <li><a href="t5-ruby-classes.html">Classes Are In Session!</li>
+                                <li><a href="c4-tech-issues.html">Maintenance Headache!</li>
+                                <li><a href="t4-enumerable-methods.html">Ruby Enumerable:group_by</a></li>
+                                <li><a href="c3_thinking-style.html">My Thinking Style: Understanding and Learning</li>
+                                <li><a href="t3-arrays-hashes.html">Arrays Versus Hashes</a></li>
+                                <li><a href="t2-css-design.html">Introduction to CSS: Margin, Padding, and Borders</a></li>
+                                <li><a href="t1-git-blog.html">Introduction to Version Control, Git, and GitHub</a></li>
+                                <li><a href="c1-chefs-kitchen.html">My DBC Expectation</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; 2015</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
     </div>
-    <div id="bodycontainer">
-    <div id="body1">
-        <p><span id="currentlink"><a href="t8-tech.html">Sorting Out the Sorts!</a></span></p>
-        <p><a href="c8-conflict.html">Past Conflicts</a></p>
-        <p><a href="t6-oop-concepts.html">Ruby Variable Types and Their Scope!</a></p>
-        <p><a href="c6-stereotype-threat.html">Stereotype Threats</a></p>
-        <p><a href="c5-feedback.html">My Pairing Experience at DBC</a></p>
-        <p><a href="t5-ruby-classes.html">Classes Are In Session!</p>
-        <p><a href="c4-tech-issues.html">Maintenance Headache!</p>
-        <p><a href="t4-enumerable-methods.html">Ruby Enumerable:group_by</a></p>
-        <p><a href="c3_thinking-style.html">My Thinking Style: Understanding and Learning</p>
-        <p><a href="t3-arrays-hashes.html">Arrays Versus Hashes</a></p>
-        <p><a href="t2-css-design.html">Introduction to CSS: Margin, Padding, and Borders</a></p>
-        <p><a href="t1-git-blog.html">Introduction to Version Control, Git, and GitHub</a></p>
-        <p><a href="c1-chefs-kitchen.html">My DBC Expectation</a></p>
-      </div>
-      <div id="body2">
-        <h1>Sorting Out the Sorts!</h1>
-        <h2>Comparing and Contrasting Types of Sorting Methods</h2>
-        <h4>03/06/15</h4>
-        <section>
-          <p class="bodytext">In this week’s technical blog, I’ll be going over some common sorting methods programmers have developed but first let me go over the idea of sorting algorithms.  Sorting algorithms, as the name implies, are used to sort elements in a list into a certain order. Typically, the sorting order is numerical and lexicographical (dictionary or alphabetical). Sort algorithms are classified by their computational complexity using big O(n) notation, where n represents the number of elements. This value correlates to the computation time. I won’t go into detail about big O notation, just note efficiency is inversely proportionate to the value inside the parenthesis. There is a great deal of research out there trying to find the fastest and most efficient sorting algorithm.</p>
+    <!-- /.container -->
 
-          <p class="bodytext">The first sorting algorithm I’ll discuss is the bubble sort algorithm. Bubble sort is one of the most basic and simplest sorts. Bubble sort compares adjacent items and swaps their positions if they are not ordered correctly.  The algorithm will continue this process until no more swaps can be made. In terms of performance, on average it has an O(n2) complexity meaning its efficiency decreases exponentially as the list size increases. Therefore, while bubble sort is simple to implement, it should almost never be used to sort lists</p>
+    <!-- jQuery -->
+    <script src="../js/jquery.js"></script>
 
-          <p class="bodytext">A much more efficient algorithm programmers use is the quick sort. Also sometimes referred as the partition-exchange sort, is a comparison sort where an element is picked as an pivot point. Two new arrays are created where one array stores values greater than the pivot element and the other for lower values (values equal to the pivot element can go to either array).  The index of the pivot point is recorded and then a new pivot point is chosen from each sub array. This process is repeated until it can no longer form sub arrays. Finally, the indices all of the pivots elements are used to generate the sorted list. Mathematical analysis of quicksort shows that quick sort, on average, has complexity of  O(nlog(n)). </p>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
 
-          <p class="bodytext">Another algorithm with similar efficiency that programmers often use is call the merge sort. In the merge sort method, the list is first broken down in n single elements sublists. Each element is compared, sorted, and merged with an adjacent list. This process is then repeated until only one list remains (which would be your sorted list). Like the quick sort algorithm, merge sort has a computation complexity of O(nlog(n)).</p>
+</body>
 
-          <p class="bodytext">Too reiterate why you want to use quick or merge sort over bubble sort, suppose we had a computer that took a millisecond to computed something. Using bubble sort to sort something with 1,000 items would take 1000 seconds to compute. Both the quick sort and merge would take on average merely 3 seconds to compute! Each of the methods listed above can be tweaked and optimized to run faster. There are also tons of different sorts other there as well but so far the fastest computing ones are limited to O(nlog(n)). Perhaps after reading this blog, you’ll go other there and try to develop a new algorithm that can sort a list even faster!</p>
-
-        </section>
-      </div>
-    </div>
-    <div class="footer">
-      <p id="footernotes">Copyright &#169; Lawrence Yu 2015</p>
-      <a href="https://github.com/lawyu89/"><img class="resize" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" alt=""/></a>
-      <a href="https://twitter.com/lawyu89"><img class="resize" src="http://www1.montpellier.inra.fr/ica2013/images/twitter_logo.png" alt=""/></a>
-      <a href="https://www.facebook.com/lawrence.yu.336"><img class="resize" src="https://www.newbrandanalytics.com/blog/wp-content/uploads/2013/12/Facebook-Icon-2-1021x1024.png" alt=""/></a>
-    </div>
-  </div>
 </html>

@@ -11,3 +11,29 @@ body {
 footer {
     margin: 50px 0;
 }
+
+#sidebar{
+  margin-top: 50px;
+}
+
+#currentlink {
+  color:black;
+}
+
+.codeexample {
+  background: #4f4f4f;
+  font-weight: bold
+}
+
+.figure {
+  display: block;
+  max-width:70%;
+  margin: auto;
+  text-align: center;
+}
+
+.bodytext {
+  text-indent: 3em;
+  padding-left: 2em;
+  padding-right: 2em;
+}

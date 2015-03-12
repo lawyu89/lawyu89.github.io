@@ -1,61 +1,171 @@
 <!DOCTYPE html>
-<html>
-  <HEAD>
-    <title>Lawrence's Blog Entries</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
-    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
-  </HEAD>
-    <div id="containter">
-    <div id="header">Lawrence Yu</div>
-    <div class="navbar">
-      <ul>
-        <li class="navitem"><a href="../index.html">Home</a></li>
-        <li class="navitem"><a href="../projects/goldgrabber.html">Projects</a></li>
-        <li class="navitem"><a href="#">About Me</a></li>
-        <li class="navitem"><a href="mailto:lawrenceyu1@gmail.com">Contact Me</a></li>
-      </ul>
-    </div>
-    <div id="bodycontainer">
-    <div id="body1">
-        <p><a href="t8-tech.html">Sorting Out the Sorts!</a></p>
-        <p><a href="c8-conflict.html">Past Conflicts</a></p>
-        <p><span id="currentlink"><a href="t7-JavaScript.html">Looping in JavaScript Vs Ruby!</a></span></p>
-        <p><a href="c7-values.html">The Things I Value!</a></p>
-        <p><a href="t6-oop-concepts.html">Ruby Variable Types and Their Scope!</a></p>
-        <p><a href="c6-stereotype-threat.html">Stereotype Threats</a></p>
-        <p><a href="c5-feedback.html">My Pairing Experience at DBC</a></p>
-        <p><a href="t5-ruby-classes.html">Classes Are In Session!</p>
-        <p><a href="c4-tech-issues.html">Maintenance Headache!</p>
-        <p><a href="t4-enumerable-methods.html">Ruby Enumerable:group_by</a></p>
-        <p><a href="c3_thinking-style.html">My Thinking Style: Understanding and Learning</p>
-        <p><a href="t3-arrays-hashes.html">Arrays Versus Hashes</a></p>
-        <p><a href="t2-css-design.html">Introduction to CSS: Margin, Padding, and Borders</a></p>
-        <p><a href="t1-git-blog.html">Introduction to Version Control, Git, and GitHub</a></p>
-        <p><a href="c1-chefs-kitchen.html">My DBC Expectation</a></p>
-      </div>
-      <div id="body2">
-        <h1>Looping in JavaScript Vs Ruby!</h1>
-        <h2>What's the difference?</h2>
-        <h4>2/28/15</h4>
-        <section>
-          <p class="bodytext">The week at DBC, we learned the basics of JavaScript and completed simple exercises using it. It was certainly a different experience learning JavaScript than it was with learning Ruby. When I was first learning Ruby, it was a bit tough picking up the language since I had to learn the syntax, how it works, what does what, etc. With JavaScript on the other hand, having knowledge of Ruby really makes learning JavaScript much simpler, other than getting used to the syntax, because I can now sort of guess how things works and what does what. There are a ton of similarities between the two programming languages though as Ruby has some of its origin from JavaScript. However, there are a few things that I thought Ruby does better than JavaScript, namely looping. </p>
+<html lang="en">
 
-          <p class="bodytext">In JavaScript, you can iterate of your array or your hash with the <span class="codeexample">for</span> method or the <span class="codeexample">while</span> method. Both of these iterators require a condition that tells them when to stop looping. The ‘for’ also usually requires a counter (typically i=0) and a way to increment the counter so that counter. ‘For’ loops are best used when you know ahead of time how many iterations you need. They look something like so:</p>
-          <img class="figure" src="../imgs/jsforloop.png"/>
-          <p class="bodytext">The other loop ‘while’ starts of with a condition that is true and loops until that condition becomes false.  With ‘while’ loops, it is critical to include some way to change the condition to false to prevent infinite loops and crash your program. It is best to use ‘while’ loops to iterate over an unknown number of loops. An example of a ‘while’ loop is as follows:
-          <img class="figure" src="../imgs/jswhileloop.png"/>
-          <p class="bodytext">In Ruby, you can do the same ‘for’ and ‘while’ (albeit slight differences in syntax) but typically most ruby programmers opt not to. Instead, we use the .each or the .map enumerable, which is already built in the language, to iterate over each element in the array or hash without needing to specify any counters or conditions to loop. In addition, if you wanted to examine certain elements in an array and would like an counter to look up the index, Ruby has an .each_with_index method so you can look at the element and its index value. Too produce the same while as above with Ruby you could do something like this:</p>
-          <img class="figure" src="../imgs/rubyeachloop.png"/>
-          <p class="bodytext">As you cans see, using ruby significantly reduces the amount of code needed to produce the same results. In my opinion Ruby iteration methods are far simpler to use than JavaScripts loops. Well that wraps up this week’s technical blog, stay tune for next week’s when we start learning about databases and SQL!</p>
-        </section>
-      </div>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Lawrence Yu Blog Posts</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/blog-post.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                </button>
+                <p class="navbar-brand" href="#">Lawrence Yu</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="../../index.html">Home</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Blog Post Content Column -->
+            <div class="col-lg-8">
+
+                <!-- Blog Post -->
+
+                <!-- Title -->
+                <h1>Looping in JavaScript Vs Ruby!</h1>
+                <h3>How to Loop each in Language</h2>
+                <!-- Author -->
+                <p class="lead">
+                    by Lawrence Yu
+                </p>
+
+                <hr>
+
+                <!-- Date/Time -->
+                <p><span class="glyphicon glyphicon-time"></span> Posted on February 28, 2015</p>
+
+                <!-- Preview Image -->
+                <!-- <img class="img-responsive" src="http://placehold.it/900x300" alt=""> -->
+
+                <hr>
+
+                <!-- Post Content -->
+                <p class="bodytext">This week at DBC, we learned the basics of JavaScript and completed simple exercises using it. It was certainly a different experience learning JavaScript than it was with learning Ruby. When I was first learning Ruby, it was a bit tough picking up the language since I had to learn the syntax, how it works, what does what, etc. With JavaScript on the other hand, having knowledge of Ruby really makes learning JavaScript much simpler, other than getting used to the syntax, because I can now sort of guess how things works and what does what. There are a ton of similarities between the two programming languages though as Ruby has some of its origin from JavaScript. However, there are a few things that I thought Ruby does better than JavaScript, namely looping. </p>
+
+                <p class="bodytext">In JavaScript, you can iterate of your array or your hash with the <span class="codeexample">for</span> method or the <span class="codeexample">while</span> method. Both of these iterators require a condition that tells them when to stop looping. The ‘for’ also usually requires a counter (typically i=0) and a way to increment the counter so that counter. ‘For’ loops are best used when you know ahead of time how many iterations you need. They look something like so:</p>
+                <img class="figure" src="../imgs/jsforloop.png"/>
+                <p class="bodytext">The other loop ‘while’ starts of with a condition that is true and loops until that condition becomes false.  With ‘while’ loops, it is critical to include some way to change the condition to false to prevent infinite loops and crash your program. It is best to use ‘while’ loops to iterate over an unknown number of loops. An example of a ‘while’ loop is as follows:
+                <img class="figure" src="../imgs/jswhileloop.png"/>
+                <p class="bodytext">In Ruby, you can do the same ‘for’ and ‘while’ (albeit slight differences in syntax) but typically most ruby programmers opt not to. Instead, we use the .each or the .map enumerable, which is already built in the language, to iterate over each element in the array or hash without needing to specify any counters or conditions to loop. In addition, if you wanted to examine certain elements in an array and would like an counter to look up the index, Ruby has an .each_with_index method so you can look at the element and its index value. Too produce the same while as above with Ruby you could do something like this:</p>
+                <img class="figure" src="../imgs/rubyeachloop.png"/>
+                <p class="bodytext">As you cans see, using ruby significantly reduces the amount of code needed to produce the same results. In my opinion Ruby iteration methods are far simpler to use than JavaScripts loops. Well that wraps up this week’s technical blog, stay tune for next week’s when we start learning about databases and SQL!</p>
+
+                <hr>
+
+                <!-- Blog Comments -->
+
+                <!-- Comments Form -->
+                <div class="well">
+                        <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    /* * * CONFIGURATION VARIABLES * * */
+                    var disqus_shortname = 'lawyu89';
+
+                    /* * * DON'T EDIT BELOW THIS LINE * * */
+                    (function() {
+                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+                </div>
+            </div>
+
+
+            <!-- Blog Sidebar Widgets Column -->
+            <div class="col-md-4">
+
+                <!-- Blog Categories Well -->
+                <div class="well" id="sidebar">
+                    <h4>Previous Blog Entries</h4>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ul class="list-unstyled">
+                                <li><a href="t8-tech.html">Sorting Out the Sorts!</a></li>
+                                <li><a href="c8-conflict.html">Past Conflicts</a></li>
+                                <li><a href="t7-JavaScript.html"><span id="currentlink">Looping in JavaScript Vs Ruby!</span></a></li>
+                                <li><a href="c7-values.html">The Things I Value!</a></li>
+                                <li><a href="t6-oop-concepts.html">Ruby Variable Types and Their Scope!</a></li>
+                                <li><a href="c6-stereotype-threat.html">Stereotype Threats</a></li>
+                                <li><a href="c5-feedback.html">Pairing and Feedback</a></li>
+                                <li><a href="t5-ruby-classes.html">Classes Are In Session!</li>
+                                <li><a href="c4-tech-issues.html">Maintenance Headache!</li>
+                                <li><a href="t4-enumerable-methods.html">Ruby Enumerable:group_by</a></li>
+                                <li><a href="c3_thinking-style.html">My Thinking Style: Understanding and Learning</li>
+                                <li><a href="t3-arrays-hashes.html">Arrays Versus Hashes</a></li>
+                                <li><a href="t2-css-design.html">Introduction to CSS: Margin, Padding, and Borders</a></li>
+                                <li><a href="t1-git-blog.html">Introduction to Version Control, Git, and GitHub</a></li>
+                                <li><a href="c1-chefs-kitchen.html">My DBC Expectation</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; 2015</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
     </div>
-    <div class="footer">
-      <p id="footernotes">Copyright &#169; Lawrence Yu 2015</p>
-      <a href="https://github.com/lawyu89/"><img class="resize" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" alt=""/></a>
-      <a href="https://twitter.com/lawyu89"><img class="resize" src="http://www1.montpellier.inra.fr/ica2013/images/twitter_logo.png" alt=""/></a>
-      <a href="https://www.facebook.com/lawrence.yu.336"><img class="resize" src="https://www.newbrandanalytics.com/blog/wp-content/uploads/2013/12/Facebook-Icon-2-1021x1024.png" alt=""/></a>
-    </div>
-  </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+
+</body>
+
 </html>
