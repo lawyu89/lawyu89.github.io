@@ -21,7 +21,7 @@ footer {
 }
 
 .codeexample {
-  background: #4f4f4f;
+  background: #8A8A8A;
   font-weight: bold
 }
 
@@ -30,10 +30,18 @@ footer {
   max-width:70%;
   margin: auto;
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .bodytext {
   text-indent: 3em;
   padding-left: 2em;
   padding-right: 2em;
+}
+
+#blogimg{
+  margin: auto;
+  max-width: 70%;
+  max-height: 250px;
 }

@@ -76,14 +76,14 @@
                 <p><span class="glyphicon glyphicon-time"></span> Posted on March 6, 2015</p>
 
                 <!-- Preview Image -->
-                <!-- <img class="img-responsive" src="http://placehold.it/900x300" alt=""> -->
+                <img class="img-responsive" id="blogimg" src="../imgs/sortlogo.png" alt="">
 
                 <hr>
 
                 <!-- Post Content -->
                 <p class="bodytext">In this week’s technical blog, I’ll be going over some common sorting methods programmers have developed but first let me go over the idea of sorting algorithms.  Sorting algorithms, as the name implies, are used to sort elements in a list into a certain order. Typically, the sorting order is numerical and lexicographical (dictionary or alphabetical). Sort algorithms are classified by their computational complexity using big O(n) notation, where n represents the number of elements. This value correlates to the computation time. I won’t go into detail about big O notation, just note efficiency is inversely proportionate to the value inside the parenthesis. There is a great deal of research out there trying to find the fastest and most efficient sorting algorithm.</p>
 
-                <p class="bodytext">The first sorting algorithm I’ll discuss is the bubble sort algorithm. Bubble sort is one of the most basic and simplest sorts. Bubble sort compares adjacent items and swaps their positions if they are not ordered correctly.  The algorithm will continue this process until no more swaps can be made. In terms of performance, on average it has an O(n2) complexity meaning its efficiency decreases exponentially as the list size increases. Therefore, while bubble sort is simple to implement, it should almost never be used to sort lists</p>
+                <p class="bodytext">The first sorting algorithm I’ll discuss is the bubble sort algorithm. Bubble sort is one of the most basic and simplest sorts. Bubble sort compares adjacent items and swaps their positions if they are not ordered correctly.  The algorithm will continue this process until no more swaps can be made. In terms of performance, on average it has an O(n^2) complexity meaning its efficiency decreases exponentially as the list size increases. Therefore, while bubble sort is simple to implement, it should almost never be used to sort lists</p>
 
                 <p class="bodytext">A much more efficient algorithm programmers use is the quick sort. Also sometimes referred as the partition-exchange sort, is a comparison sort where an element is picked as an pivot point. Two new arrays are created where one array stores values greater than the pivot element and the other for lower values (values equal to the pivot element can go to either array).  The index of the pivot point is recorded and then a new pivot point is chosen from each sub array. This process is repeated until it can no longer form sub arrays. Finally, the indices all of the pivots elements are used to generate the sorted list. Mathematical analysis of quicksort shows that quick sort, on average, has complexity of  O(nlog(n)). </p>
 
@@ -123,6 +123,7 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <ul class="list-unstyled">
+                                <li><a href="c9-questions.html">How to Ask the Right Questions</a></li>
                                 <li><a href="t8-tech.html"><span id="currentlink">Sorting Out the Sorts!</span></a></li>
                                 <li><a href="c8-conflict.html">Past Conflicts</a></li>
                                 <li><a href="t7-JavaScript.html">Looping in JavaScript Vs Ruby!</a></li>

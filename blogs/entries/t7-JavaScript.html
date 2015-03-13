@@ -76,7 +76,7 @@
                 <p><span class="glyphicon glyphicon-time"></span> Posted on February 28, 2015</p>
 
                 <!-- Preview Image -->
-                <!-- <img class="img-responsive" src="http://placehold.it/900x300" alt=""> -->
+                <img class="img-responsive" id="blogimg" src="../imgs/looplogo.png" alt="">
 
                 <hr>
 
@@ -85,10 +85,13 @@
 
                 <p class="bodytext">In JavaScript, you can iterate of your array or your hash with the <span class="codeexample">for</span> method or the <span class="codeexample">while</span> method. Both of these iterators require a condition that tells them when to stop looping. The ‘for’ also usually requires a counter (typically i=0) and a way to increment the counter so that counter. ‘For’ loops are best used when you know ahead of time how many iterations you need. They look something like so:</p>
                 <img class="figure" src="../imgs/jsforloop.png"/>
+
                 <p class="bodytext">The other loop ‘while’ starts of with a condition that is true and loops until that condition becomes false.  With ‘while’ loops, it is critical to include some way to change the condition to false to prevent infinite loops and crash your program. It is best to use ‘while’ loops to iterate over an unknown number of loops. An example of a ‘while’ loop is as follows:
                 <img class="figure" src="../imgs/jswhileloop.png"/>
+
                 <p class="bodytext">In Ruby, you can do the same ‘for’ and ‘while’ (albeit slight differences in syntax) but typically most ruby programmers opt not to. Instead, we use the .each or the .map enumerable, which is already built in the language, to iterate over each element in the array or hash without needing to specify any counters or conditions to loop. In addition, if you wanted to examine certain elements in an array and would like an counter to look up the index, Ruby has an .each_with_index method so you can look at the element and its index value. Too produce the same while as above with Ruby you could do something like this:</p>
                 <img class="figure" src="../imgs/rubyeachloop.png"/>
+
                 <p class="bodytext">As you cans see, using ruby significantly reduces the amount of code needed to produce the same results. In my opinion Ruby iteration methods are far simpler to use than JavaScripts loops. Well that wraps up this week’s technical blog, stay tune for next week’s when we start learning about databases and SQL!</p>
 
                 <hr>
@@ -123,6 +126,7 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <ul class="list-unstyled">
+                                <li><a href="c9-questions.html">How to Ask the Right Questions</a></li>
                                 <li><a href="t8-tech.html">Sorting Out the Sorts!</a></li>
                                 <li><a href="c8-conflict.html">Past Conflicts</a></li>
                                 <li><a href="t7-JavaScript.html"><span id="currentlink">Looping in JavaScript Vs Ruby!</span></a></li>

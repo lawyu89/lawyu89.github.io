@@ -590,6 +590,15 @@ footer .footer-below {
     border-top: 2px solid #808080 ;
 }
 
-#goldgrabberlink{
+.externallink{
     color:blue;
+}
+
+.externallink:hover{
+    color: black;
+}
+
+#blogimg1{
+    width: 360px;
+    height: 260px;
 }
