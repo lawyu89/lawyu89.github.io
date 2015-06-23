@@ -37,8 +37,8 @@ function runGame() {
     var i=0;
     //randomly generate coin locations
     while (i<coinsImg.length) {
-        var h = Math.floor(Math.random()*31)*20;
-        var v = Math.floor(Math.random()*31)*20;
+        var h = Math.floor(Math.random()*29)*20;
+        var v = Math.floor(Math.random()*29)*20;
         coinsImg[i].style.top=v+"px";
         coinsImg[i].style.left=h+"px";
         coinsImg[i].style.opacity="1";
@@ -49,8 +49,8 @@ function runGame() {
     leprechauns=document.getElementsByClassName('leprechaun')
     var i=0;
      while (i<leprechauns.length) {
-        var h = Math.floor(Math.random()*30)*20+20;
-        var v = Math.floor(Math.random()*30)*20+20;
+        var h = Math.floor(Math.random()*28)*20+20;
+        var v = Math.floor(Math.random()*28)*20+20;
         leprechauns[i].style.top=v+"px";
         leprechauns[i].style.left=h+"px";
         i++;
@@ -99,12 +99,12 @@ function runGame() {
                 }
             }
             else if (goDir==='right') {
-                if (lepx<=580) {
+                if (lepx<=540) {
                     leprechaunsImg[i].style.left=(lepx+20)+"px";
                     leprechauns[i].xCoord=lepx+20;
                 }
             }else if (goDir==='down') {
-                if (lepy<=580) {
+                if (lepy<=540) {
                     leprechaunsImg[i].style.top=(lepy+20)+"px";
                     leprechauns[i].yCoord=lepy+20;
                 }
@@ -135,12 +135,12 @@ function runGame() {
                     player.yCoord=playery-20;
                 }
             } else if (direction.keyCode===39 && player.alive===true) { //right
-                if (playerx<=580) {
+                if (playerx<=540) {
                     playerImg.style.left=(playerx+20)+"px";
                     player.xCoord=playerx+20;
                 }
             } else if (direction.keyCode===40 && player.alive===true) { //down
-                if (playery<=580) {
+                if (playery<=540) {
                     playerImg.style.top=(playery+20)+"px";
                     player.yCoord=playery+20;
                 }
